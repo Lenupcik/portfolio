@@ -66,7 +66,7 @@ set city_id = c.city_id<br/>
 from cities c<br/>
 where ad.city = c.name;
 ![Схема БД после создания таблицы cyties](https://github.com/Lenupcik/portfolio/blob/main/new_chart.jpg)
-![Скрин создания таблицы cyties]()
+![Скрин создания таблицы cyties](https://github.com/Lenupcik/portfolio/blob/main/table_cyties.png)
 ### 2. Выполняем сам запрос, согласно задания
 
 create temp table mosсow_flights as<br/>
