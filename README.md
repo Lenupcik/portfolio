@@ -43,7 +43,7 @@ cd >cd C:\Users\Лена\Desktop\БД
 + В выборке данных для json-а нужно использовать функцию lang
 
 ## Выполнение:
-1. создаем таблицу cities<br/>
+### 1. создаем таблицу cities<br/>
 create table cities(<br/>
  city_id serial not null,<br/>
  name jsonb not null<br/>
@@ -66,7 +66,7 @@ set city_id = c.city_id<br/>
 from cities c<br/>
 where ad.city = c.name;
 ![nnnn](https://drive.google.com/file/d/14lqpqEevZ9kg_OVMkpps5pl485CECrfj/view?usp=sharing)
-2. Выполняем сам запрос, согласно задания
+### 2. Выполняем сам запрос, согласно задания
 
 create temp table mosсow_flights as<br/>
 select to_char(scheduled_departure, 'ID'::text)::int as day_of_week, c_2.name as city_name<br/>
