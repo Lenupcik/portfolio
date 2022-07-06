@@ -65,8 +65,12 @@ update airports_data ad<br/>
 set city_id = c.city_id<br/>
 from cities c<br/>
 where ad.city = c.name;
-![Схема БД после создания таблицы cyties](https://github.com/Lenupcik/portfolio/blob/main/new_chart.jpg)
-![Скрин создания таблицы cyties](https://github.com/Lenupcik/portfolio/blob/main/table_cyties.png)
+
+Схема БД после создания таблицы cities
+![Схема БД после создания таблицы cities](https://github.com/Lenupcik/portfolio/blob/main/new_chart.jpg)
+
+Создание таблицы cities
+![Скрин создания таблицы cities](https://github.com/Lenupcik/portfolio/blob/main/table_cyties.png)
 ### 2. Выполняем сам запрос, согласно задания
 
 create temp table mosсow_flights as<br/>
@@ -91,6 +95,8 @@ group by scheduled_departure, c_2.name
 select row_number () over () as rn, city_name ->>lang() as arr_city, count(*) as cnt, array_agg(distinct day_of_week) as day_of_week<br/> 
 from mosсow_flights<br/>
 group by city_name
+
+Выполнение запроса согласно задания
 ![Скрин запроса к БД по заданию](https://github.com/Lenupcik/portfolio/blob/main/temp_table.png)
 
 
