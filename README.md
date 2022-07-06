@@ -91,7 +91,7 @@ group by scheduled_departure, c_2.name
 select row_number () over () as rn, city_name ->>lang() as arr_city, count(*) as cnt, array_agg(distinct day_of_week) as day_of_week<br/> 
 from mosсow_flights<br/>
 group by city_name
-![Скрин запроса к БД по заданию]()
+![Скрин запроса к БД по заданию](https://github.com/Lenupcik/portfolio/blob/main/temp_table.png)
 
 
 
